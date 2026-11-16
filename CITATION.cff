@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper below and the ReV-StED dataset."
+title: "sideslip_bench: an open-source benchmark for vehicle sideslip angle estimation"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/hschaefke/sideslip_bench"
+authors:
+  - family-names: "Schäfke"
+    given-names: "Hendrik"
+    affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover"
+keywords:
+  - sideslip angle
+  - vehicle state estimation
+  - benchmark
+  - neural networks
+  - Kalman filter
+preferred-citation:
+  type: conference-paper
+  title: "An Open-Source Benchmark for Vehicle Sideslip Angle Estimation"
+  status: submitted
+  authors:
+    - family-names: "Schäfke"
+      given-names: "Hendrik"
+      affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover"
+    - family-names: "Weber"
+      given-names: "Daniel O. M."
+      affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover"
+    - family-names: "Seel"
+      given-names: "Thomas"
+      affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover; L3S Research Center, Leibniz University Hannover"
+    - family-names: "Muhmann"
+      given-names: "Christian"
+      affiliation: "University of Bonn"
+    - family-names: "Bank"
+      given-names: "Dennis"
+      affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover"
+    - family-names: "Ehlers"
+      given-names: "Simon F. G."
+      affiliation: "Institute of Mechatronic Systems, Leibniz University Hannover"
+  collection-title: "21st IFAC Symposium on System Identification (SYSID 2027)"
+  conference:
+    name: "21st IFAC Symposium on System Identification (SYSID 2027)"
+    city: "Lyon"
+    country: "FR"
+  notes: "Submitted to IFAC SYSID 2027."
+references:
+  - type: data
+    title: "Real-world Vehicle State Estimation Dataset (ReV-StED)"
+    authors:
+      - family-names: "Kalyanasundaram"
+        given-names: "A."
+      - family-names: "Chandra Sekaran"
+        given-names: "K."
+      - family-names: "Lange"
+        given-names: "M."
+      - family-names: "Stäuber"
+        given-names: "P."
+      - family-names: "Utschick"
+        given-names: "W."
+      - family-names: "Botsch"
+        given-names: "M."
+    publisher:
+      name: "Zenodo"
+    version: "1"
+    year: 2025
+    doi: "10.5281/zenodo.15270060"

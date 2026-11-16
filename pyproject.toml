@@ -1,0 +1,42 @@
+[project]
+name = "sideslip-bench"
+version = "0.1.0"
+description = "An open-source benchmark for vehicle sideslip angle estimation on the public ReV-StED dataset: neural networks and model-based observers under one protocol."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+# Core: data, evaluation, report and the model-based observers -- no torch.
+dependencies = [
+    "h5py>=3.16.0",
+    "matplotlib>=3.11.2",
+    "numba>=0.62.1",
+    "numpy>=2.3.2",
+    "pandas>=2.3.1",
+    "requests>=2.32.5",
+    "tqdm>=4.67.1",
+]
+
+[project.optional-dependencies]
+# Training and running the networks (scripts/train.py, ssb.load_baseline for a network).
+train = [
+    "torch==2.12.0",  # version the paper numbers were produced with
+    "tsfast",
+]
+# Hyperparameter search for the networks (scripts/tune.py).
+tune = [
+    "ray[tune]>=2.48.0",
+    "torch==2.12.0",
+    "tsfast",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4.0"]
+
+[tool.uv.sources]
+# Pinned to the source the paper's numbers were produced with: d767fc0 has the same tree as 798e1eb,
+# the commit used for the paper, which is no longer on a tsfast branch.
+tsfast = { git = "https://github.com/daniel-om-weber/tsfast", rev = "d767fc05e933daa5599e32bc30410c2ef8ab2558" }
+
+[tool.uv]
+# tsfast@d767fc0 uses identibench.benchmark.BenchmarkSpecBase, which later releases renamed.
+constraint-dependencies = ["identibench==0.2.0"]

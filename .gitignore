@@ -1,0 +1,10 @@
+# Dataset (downloaded and rebuilt by scripts/preprocess_data.py)
+data/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Training outputs (scripts/train.py)
+runs/
+# Standard reports (sideslip_bench.evaluate / scripts/evaluate.py --name)
+reports/

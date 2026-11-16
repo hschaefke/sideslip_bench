@@ -1,0 +1,24 @@
+{
+  "model": "tcn",
+  "u": 1,
+  "win_sz": 400,
+  "stp_sz": 1,
+  "batch_size": 32,
+  "n_batches_train": 600,
+  "n_epoch": 100,
+  "lr": 0.00030568714970456517,
+  "grad_clip": 1.0,
+  "n_skip": 20,
+  "valid_skip": 20,
+  "hidden_size": 32,
+  "num_layers": 4,
+  "tcn_kernel_size": 3,
+  "tcn_convs_per_block": 2,
+  "sym_wrap": 0,
+  "source": {
+    "asha_run": "asha_tcn_lean_20261029-180318",
+    "research_record": "results/benchmark_asha_seeded_lean/tcn_lean.json",
+    "hpo": "lean protocol (2026-10-29): lr, width, depth searched; 100 trials random search + ASHA",
+    "n_params": 23233
+  }
+}

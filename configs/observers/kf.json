@@ -1,0 +1,61 @@
+{
+  "observer": "kf",
+  "label": "linear KF",
+  "seed": 0,
+  "fixed": {
+    "m": 900.0,
+    "Iz": 700.0,
+    "lf": 1.0488,
+    "lr": 0.8242,
+    "r_s": 20.297,
+    "vx_min": 1.0,
+    "dt": 0.02,
+    "delta_sw_offset_rad": 0.1911
+  },
+  "tuned": {
+    "q_steer": 0.00024375649960200742,
+    "r_ay": 10.0,
+    "r_r": 0.001,
+    "Cf": 29323.20747089925,
+    "Cr": 94092.24941572786
+  },
+  "bound_hits": [
+    "r_ay",
+    "r_r"
+  ],
+  "train_RMSE_g5": 0.35534021038349684,
+  "pso": {
+    "particles": 100,
+    "iterations": 50,
+    "restarts": 30,
+    "w": 0.7,
+    "c1": 1.4,
+    "c2": 1.4,
+    "space": "log10",
+    "box": {
+      "q_steer": [
+        0.0001,
+        5.0
+      ],
+      "r_ay": [
+        0.1,
+        10.0
+      ],
+      "r_r": [
+        0.001,
+        1.0
+      ],
+      "Cf": [
+        10000.0,
+        250000.0
+      ],
+      "Cr": [
+        10000.0,
+        250000.0
+      ]
+    },
+    "skip_n": 20,
+    "gate_kmh": 5.0
+  },
+  "source": "results/observer_tuning/kf_s0.json (scripts/tune_observer.py)"
+}

@@ -1,0 +1,85 @@
+{
+ "what": "Test predictions (beta in deg) of the networks with built-in mirror symmetry (config + \"sym_wrap\": 1): the training seed with the lowest RMSE_g5 on the validation split. No weights are shipped. Written by scripts/bundle_baselines.py --symmetric.",
+ "methods": {
+  "tdnn": {
+   "label": "TDNN + symmetry",
+   "family": "network",
+   "seed": 0,
+   "valid_RMSE_g5": 0.1932341230540434,
+   "test": {
+    "RMSE_g5": 0.2600071162132383,
+    "MAE_g5": 0.19814437870723406,
+    "P95_g5": 0.5168882787227633,
+    "MaxE_g5": 2.530386447906494,
+    "RMSE": 0.25930310595309547,
+    "MAE": 0.17927829073409715,
+    "P95": 0.5034105181694031,
+    "MaxE": 6.737860202789307
+   }
+  },
+  "tcn": {
+   "label": "TCN + symmetry",
+   "family": "network",
+   "seed": 6,
+   "valid_RMSE_g5": 0.18691382948643387,
+   "test": {
+    "RMSE_g5": 0.2547975516535223,
+    "MAE_g5": 0.1929804959931047,
+    "P95_g5": 0.5015586614608766,
+    "MaxE_g5": 1.7107906341552734,
+    "RMSE": 0.2559216055015578,
+    "MAE": 0.1749331083978362,
+    "P95": 0.48779134452342987,
+    "MaxE": 8.041390419006348
+   }
+  },
+  "rnn": {
+   "label": "RNN + symmetry",
+   "family": "network",
+   "seed": 0,
+   "valid_RMSE_g5": 0.18520456057400028,
+   "test": {
+    "RMSE_g5": 0.2564231636442171,
+    "MAE_g5": 0.1929653277960535,
+    "P95_g5": 0.5107551723718644,
+    "MaxE_g5": 1.917740821838379,
+    "RMSE": 0.24816131649662793,
+    "MAE": 0.17364854474576966,
+    "P95": 0.49510467052459717,
+    "MaxE": 4.662807464599609
+   }
+  },
+  "gru": {
+   "label": "GRU + symmetry",
+   "family": "network",
+   "seed": 6,
+   "valid_RMSE_g5": 0.18662915117270765,
+   "test": {
+    "RMSE_g5": 0.25714487132887565,
+    "MAE_g5": 0.19287382303516148,
+    "P95_g5": 0.5058172374963763,
+    "MaxE_g5": 2.23822021484375,
+    "RMSE": 0.2706491354581633,
+    "MAE": 0.17582409438217927,
+    "P95": 0.4909469336271286,
+    "MaxE": 7.818196773529053
+   }
+  },
+  "lstm": {
+   "label": "LSTM + symmetry",
+   "family": "network",
+   "seed": 1,
+   "valid_RMSE_g5": 0.19063252428197222,
+   "test": {
+    "RMSE_g5": 0.2592505738261834,
+    "MAE_g5": 0.19327749741985972,
+    "P95_g5": 0.5150759935379033,
+    "MaxE_g5": 2.1978845596313477,
+    "RMSE": 0.27338653444684946,
+    "MAE": 0.17603249727515666,
+    "P95": 0.5016547441482544,
+    "MaxE": 10.20004940032959
+   }
+  }
+ }
+}

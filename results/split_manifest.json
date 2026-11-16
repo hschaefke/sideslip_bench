@@ -1,0 +1,5013 @@
+{
+  "dataset": "ReV-StED",
+  "layout": "time-continuous 70/10/20, author-confirmed (email 2026-01-31): recordings 1..7 concatenated, then cut; recording 5 straddles train/valid and 6 straddles valid/test, so no window spans a join",
+  "created": "2026-07-28T21:26:00",
+  "splits": {
+    "train": [
+      {
+        "file": "train/ReVSTED_recording_1.h5",
+        "n": 48381,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            75453.1115229672,
+            -8.410808881022692,
+            9.914565838778366
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            320529.51038756856,
+            0.0028542418378589,
+            24.4500776451433
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            -53.46661132732906,
+            -0.161713564259608,
+            0.182584369472578
+          ],
+          "acc_body_hr_x": [
+            0,
+            81.47360000000005,
+            -0.6538,
+            0.4068
+          ],
+          "acc_body_hr_y": [
+            0,
+            -1801.2594,
+            -0.6185,
+            0.5378000000000001
+          ],
+          "acc_body_hr_z": [
+            0,
+            48237.2187,
+            0.6046,
+            1.3396
+          ],
+          "acc_hor_x": [
+            0,
+            93.61759999999998,
+            -0.6272,
+            0.3792
+          ],
+          "acc_hor_y": [
+            0,
+            -1379.1999999999998,
+            -0.5632,
+            0.5064000000000001
+          ],
+          "acc_hor_z": [
+            0,
+            48371.9168,
+            0.6216,
+            1.3412000000000002
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            -9952.725,
+            -5.4,
+            4.8
+          ],
+          "brake_pressure_obd": [
+            0,
+            127222.27245086432,
+            0.0,
+            56.54545593261719
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            318940.01499999996,
+            -0.015,
+            24.32
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            7196.805,
+            -0.4,
+            0.805
+          ],
+          "delta_sw_deg": [
+            0,
+            -1456820.715463221,
+            -518.0032348632812,
+            541.9346313476562
+          ],
+          "delta_sw_rad": [
+            0,
+            -25426.318096092677,
+            -9.040861984345737,
+            9.458543647598276
+          ],
+          "gnss_cog": [
+            0,
+            7652009.38,
+            0.0,
+            359.95
+          ],
+          "gnss_height": [
+            0,
+            18046371.92,
+            372.89,
+            373.34
+          ],
+          "gnss_lat_abs": [
+            0,
+            2360218.2348178998,
+            48.7833674,
+            48.7846147
+          ],
+          "gnss_long_abs": [
+            0,
+            555031.871727,
+            11.470536,
+            11.4737664
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -3378703.73,
+            -139.11,
+            -0.39
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -3833803.6,
+            -194.49,
+            42.92
+          ],
+          "gnss_sats_used": [
+            0,
+            760344.0,
+            13.0,
+            17.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            768450.0,
+            13.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            778.0070000000003,
+            0.014,
+            0.028
+          ],
+          "gnss_stddev_lat": [
+            0,
+            394.21400000000006,
+            0.007,
+            0.015
+          ],
+          "gnss_stddev_long": [
+            0,
+            392.05000000000007,
+            0.007,
+            0.013
+          ],
+          "ins_height": [
+            0,
+            18003086.96,
+            371.98,
+            372.45
+          ],
+          "ins_lat_abs": [
+            0,
+            2360218.2283274997,
+            48.7833667,
+            48.7846155
+          ],
+          "ins_long_abs": [
+            0,
+            555031.8786746,
+            11.4705374,
+            11.4737676
+          ],
+          "ins_pitch": [
+            0,
+            7742.92,
+            -1.7,
+            2.28
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -3379423.6399999997,
+            -139.19,
+            -0.31
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -3833291.66,
+            -194.39,
+            43.01
+          ],
+          "ins_roll": [
+            0,
+            -24501.92,
+            -3.46,
+            2.74
+          ],
+          "ins_std_vel_x": [
+            0,
+            483.80999999999995,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            483.80999999999995,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            483.80999999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_lat": [
+            0,
+            24146519.9,
+            0.01,
+            655.0
+          ],
+          "ins_stddev_long": [
+            0,
+            23548003.73,
+            0.01,
+            655.0
+          ],
+          "ins_stddev_pitch": [
+            0,
+            483.80999999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            483.80999999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            934.9,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            320631.87000000005,
+            -0.01,
+            24.465
+          ],
+          "ins_vel_hor_y": [
+            0,
+            -1949.3149999999998,
+            -0.765,
+            0.44
+          ],
+          "ins_vel_hor_z": [
+            0,
+            -55.405,
+            -0.235,
+            0.285
+          ],
+          "ins_yaw": [
+            0,
+            9527073.86,
+            0.03,
+            360.0
+          ],
+          "inv_path_radius": [
+            0,
+            -859.5178000000001,
+            -0.2601,
+            0.2686
+          ],
+          "rate_body_hr_x": [
+            0,
+            953.8924,
+            -9.6361,
+            6.434200000000001
+          ],
+          "rate_body_hr_y": [
+            0,
+            7626.954599999999,
+            -7.198,
+            9.6991
+          ],
+          "rate_body_hr_z": [
+            0,
+            -187552.71009999997,
+            -39.7152,
+            25.8102
+          ],
+          "rate_hor_x": [
+            0,
+            -115.67000000000016,
+            -9.62,
+            6.62
+          ],
+          "rate_hor_y": [
+            0,
+            -107.92000000000004,
+            -7.24,
+            9.67
+          ],
+          "rate_hor_z": [
+            0,
+            -188132.72,
+            -39.65,
+            25.74
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            -2698.189999999997,
+            -5.64,
+            3.93
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -48661.12753507476,
+            -13.946184704823144,
+            9.048065518439357
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -849.2968932199269,
+            -0.24340684119043737,
+            0.15791853423293448
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            -33046.077134443454,
+            -11.6866046819905,
+            12.04933346422355
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            -576.7628508640511,
+            -0.2039697300797191,
+            0.2103005416214353
+          ],
+          "speedo_obd": [
+            0,
+            1162541.75,
+            0.0,
+            88.5625
+          ],
+          "time": [
+            0,
+            83069735954449.7,
+            1716990400.11,
+            1716991367.71
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            320307.51763202576,
+            -0.0095051991570596,
+            24.44525299577709
+          ],
+          "vel_x_COR_ms": [
+            0,
+            318933.8419165952,
+            -0.0150195741919688,
+            24.326466164032546
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -4980.787340651919,
+            -0.6776770452533973,
+            0.2816923194257388
+          ],
+          "vel_y_COR_ms": [
+            0,
+            -2174.233688422242,
+            -0.515602164724508,
+            0.3125231482966406
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            1114339.4500000002,
+            0.0,
+            84.25
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            309538.7361111111,
+            0.0,
+            23.40277777777778
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            1099696.4,
+            0.0,
+            84.2
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            305471.2222222222,
+            0.0,
+            23.38888888888889
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            307504.9791666667,
+            0.0,
+            23.395833333333336
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            1118879.0999999999,
+            0.0,
+            84.7
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            310799.75,
+            0.0,
+            23.52777777777778
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            1103169.1,
+            0.0,
+            84.7
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            306435.8611111111,
+            0.0,
+            23.52777777777778
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            308617.80555555556,
+            0.0,
+            23.52777777777778
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            308061.3923611111,
+            0.0,
+            23.440972222222225
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            310169.2430555556,
+            0.0,
+            23.444444444444443
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            305953.5416666667,
+            0.0,
+            23.44444444444445
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            -159348.47999999998,
+            -38.400000000000006,
+            25.59999999999999
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            -2781.155634048333,
+            -0.6702064327658226,
+            0.4468042885105482
+          ]
+        },
+        "sha256": "3e4f6a0d27fcf13958999a99f2220ed9253c183400a1bf8e05f7c169d05e2e9c",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "train/ReVSTED_recording_2.h5",
+        "n": 87475,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            57183.10362007352,
+            -10.054335599994348,
+            12.785737733655024
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            592164.6715877927,
+            0.0,
+            20.951654803135895
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            82.71750140708629,
+            -0.1234556351093636,
+            0.1153820718143749
+          ],
+          "acc_body_hr_x": [
+            0,
+            79.67919999999998,
+            -0.7661,
+            0.3821
+          ],
+          "acc_body_hr_y": [
+            0,
+            1322.7041,
+            -0.5412,
+            0.6188
+          ],
+          "acc_body_hr_z": [
+            0,
+            87115.3351,
+            0.749,
+            1.2587000000000002
+          ],
+          "acc_hor_x": [
+            0,
+            312.4176,
+            -0.7256,
+            0.354
+          ],
+          "acc_hor_y": [
+            0,
+            1599.5944000000002,
+            -0.4952,
+            0.5752
+          ],
+          "acc_hor_z": [
+            0,
+            87457.356,
+            0.7604000000000001,
+            1.2592
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            23241.675,
+            -4.5,
+            5.475
+          ],
+          "brake_pressure_obd": [
+            0,
+            294841.8168860674,
+            0.0,
+            75.0
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            589652.1799999999,
+            -0.195,
+            20.86
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            7246.685,
+            -0.54,
+            0.715
+          ],
+          "delta_sw_deg": [
+            0,
+            1838698.8659788966,
+            -616.485107421875,
+            569.934814453125
+          ],
+          "delta_sw_rad": [
+            0,
+            32091.349164017694,
+            -10.75969491402265,
+            9.947239033949996
+          ],
+          "gnss_cog": [
+            0,
+            13247358.24,
+            0.0,
+            359.99
+          ],
+          "gnss_height": [
+            0,
+            32630034.009999998,
+            372.89,
+            373.39
+          ],
+          "gnss_lat_abs": [
+            0,
+            4267383.0272839,
+            48.7833656,
+            48.784587
+          ],
+          "gnss_long_abs": [
+            0,
+            1003538.9504461,
+            11.4705185,
+            11.4738621
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -5722321.66,
+            -139.31,
+            -3.48
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -5708896.0,
+            -195.78,
+            49.95
+          ],
+          "gnss_sats_used": [
+            0,
+            1330990.0,
+            11.0,
+            17.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            1344333.0,
+            12.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            1490.6640000000002,
+            0.014,
+            0.026
+          ],
+          "gnss_stddev_lat": [
+            0,
+            745.615,
+            0.007,
+            0.012
+          ],
+          "gnss_stddev_long": [
+            0,
+            713.2920000000001,
+            0.007,
+            0.012
+          ],
+          "ins_height": [
+            0,
+            32551924.64,
+            371.99,
+            372.5
+          ],
+          "ins_lat_abs": [
+            0,
+            4267383.0320199,
+            48.7833648,
+            48.7845876
+          ],
+          "ins_long_abs": [
+            0,
+            1003538.9550603,
+            11.4705201,
+            11.4738631
+          ],
+          "ins_pitch": [
+            0,
+            18609.32,
+            -1.68,
+            2.61
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -5721791.81,
+            -139.4,
+            -3.4
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -5708557.67,
+            -195.66,
+            50.02
+          ],
+          "ins_roll": [
+            0,
+            -16369.61,
+            -2.95,
+            2.73
+          ],
+          "ins_std_vel_x": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_lat": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            874.7499999999998,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            1716.3199999999997,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            591572.875,
+            -0.245,
+            20.975
+          ],
+          "ins_vel_hor_y": [
+            0,
+            -788.155,
+            -0.35,
+            0.31
+          ],
+          "ins_vel_hor_z": [
+            0,
+            83.39500000000001,
+            -0.175,
+            0.14
+          ],
+          "ins_yaw": [
+            0,
+            17236733.28,
+            0.01,
+            359.98
+          ],
+          "inv_path_radius": [
+            0,
+            418.1057,
+            -0.2978,
+            0.2751
+          ],
+          "rate_body_hr_x": [
+            0,
+            -713.8473,
+            -6.6061000000000005,
+            7.8456
+          ],
+          "rate_body_hr_y": [
+            0,
+            24846.3655,
+            -11.1792,
+            7.9648
+          ],
+          "rate_body_hr_z": [
+            0,
+            151535.9689,
+            -50.346700000000006,
+            44.7038
+          ],
+          "rate_hor_x": [
+            0,
+            -42.55000000000018,
+            -6.6000000000000005,
+            7.9
+          ],
+          "rate_hor_y": [
+            0,
+            46.61999999999989,
+            -11.18,
+            7.96
+          ],
+          "rate_hor_z": [
+            0,
+            151252.21,
+            -50.3,
+            44.69
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            -7479.779999999999,
+            -3.76,
+            4.39
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            13201.899360444178,
+            -12.68177031557618,
+            10.721201465390871
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            230.4166113566845,
+            -0.22133864698848468,
+            0.1871202653407116
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            17405.57492533264,
+            -14.239106943523671,
+            11.52057621787612
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            303.7845906496207,
+            -0.24851929870807432,
+            0.20107198672889393
+          ],
+          "speedo_obd": [
+            0,
+            2150189.0625,
+            0.0,
+            75.9375
+          ],
+          "time": [
+            0,
+            150359666801933.0,
+            1718886427.94,
+            1718888177.42
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            591833.9100482549,
+            -0.1890336317971891,
+            20.9516543013924
+          ],
+          "vel_x_COR_ms": [
+            0,
+            589757.330495248,
+            -0.2070105647798889,
+            20.86689780350367
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            1648.1427424563628,
+            -0.582951794471173,
+            0.5374401037796199
+          ],
+          "vel_y_COR_ms": [
+            0,
+            2228.18370846538,
+            -0.6025338523856468,
+            0.5736288412038044
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            2041451.6,
+            0.0,
+            72.25
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            567069.888888889,
+            0.0,
+            20.069444444444446
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            2053178.9000000001,
+            0.0,
+            72.25
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            570327.4722222222,
+            0.0,
+            20.069444444444446
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            568698.6805555555,
+            0.0,
+            20.069444444444446
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            2040509.2999999998,
+            0.0,
+            72.65
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            566808.1388888889,
+            0.0,
+            20.180555555555557
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            2052722.85,
+            0.0,
+            72.5
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            570200.7916666666,
+            0.0,
+            20.13888888888889
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            568504.4652777778,
+            0.0,
+            20.15972222222222
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            568601.5729166667,
+            0.0,
+            20.114583333333336
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            566939.0138888889,
+            0.0,
+            20.125
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            570264.1319444445,
+            0.0,
+            20.104166666666668
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            197667.84000000008,
+            -49.92,
+            44.80000000000001
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            3449.95463330535,
+            -0.8712683625955694,
+            0.7819075048934598
+          ]
+        },
+        "sha256": "9688111afb950d024f954631185f7f428dd8bfe9a82ad83ccba417eac3a0cd0f",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "train/ReVSTED_recording_3.h5",
+        "n": 112164,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            140802.18455247037,
+            -9.63040615418851,
+            12.573904732119832
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            786785.9573076448,
+            0.0,
+            25.112174294656047
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            154.61158575476784,
+            -0.1475311740497139,
+            0.1532406311495363
+          ],
+          "acc_body_hr_x": [
+            0,
+            311.5562,
+            -0.6227,
+            0.4246
+          ],
+          "acc_body_hr_y": [
+            0,
+            -2465.4053000000004,
+            -0.7936000000000001,
+            0.8856
+          ],
+          "acc_body_hr_z": [
+            0,
+            111574.5089,
+            0.6488,
+            1.4733
+          ],
+          "acc_hor_x": [
+            0,
+            499.0480000000001,
+            -0.6016,
+            0.3932
+          ],
+          "acc_hor_y": [
+            0,
+            -1729.9912,
+            -0.7256,
+            0.8244
+          ],
+          "acc_hor_z": [
+            0,
+            112142.7848,
+            0.6572,
+            1.476
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            -7564.125000000002,
+            -6.975,
+            7.199999999999999
+          ],
+          "brake_pressure_obd": [
+            0,
+            458149.81861180067,
+            0.0,
+            68.09091186523438
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            780925.98,
+            -0.205,
+            24.96
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            14987.644999999999,
+            -0.895,
+            1.15
+          ],
+          "delta_sw_deg": [
+            0,
+            -1555998.9535772502,
+            -617.4476318359375,
+            572.4285888671875
+          ],
+          "delta_sw_rad": [
+            0,
+            -27157.30489750942,
+            -10.77649413417887,
+            9.99076360827738
+          ],
+          "gnss_cog": [
+            0,
+            17797510.22,
+            0.0,
+            359.97
+          ],
+          "gnss_height": [
+            0,
+            41839410.620000005,
+            372.88,
+            373.44
+          ],
+          "gnss_lat_abs": [
+            0,
+            5471816.676994599,
+            48.7833675,
+            48.7846329
+          ],
+          "gnss_long_abs": [
+            0,
+            1286786.7062694002,
+            11.4705262,
+            11.4738705
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -6811114.24,
+            -139.1,
+            1.63
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -6711658.75,
+            -195.21,
+            50.57
+          ],
+          "gnss_sats_used": [
+            0,
+            1687743.0,
+            13.0,
+            16.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            1705131.0,
+            13.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            1740.2380000000005,
+            0.013,
+            0.022
+          ],
+          "gnss_stddev_lat": [
+            0,
+            946.447,
+            0.007,
+            0.014
+          ],
+          "gnss_stddev_long": [
+            0,
+            874.5260000000002,
+            0.007,
+            0.011
+          ],
+          "ins_height": [
+            0,
+            41739226.13,
+            371.99,
+            372.54
+          ],
+          "ins_lat_abs": [
+            0,
+            5471816.685442501,
+            48.7833666,
+            48.7846336
+          ],
+          "ins_long_abs": [
+            0,
+            1286786.7252848,
+            11.4705277,
+            11.4738714
+          ],
+          "ins_pitch": [
+            0,
+            17004.370000000003,
+            -1.98,
+            1.89
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -6810185.57,
+            -139.20000000000002,
+            1.71
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -6710270.51,
+            -195.1,
+            50.64
+          ],
+          "ins_roll": [
+            0,
+            -43323.76,
+            -4.22,
+            3.81
+          ],
+          "ins_std_vel_x": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_lat": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            1121.6399999999999,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            2165.4699999999993,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            786683.5,
+            -0.205,
+            25.12
+          ],
+          "ins_vel_hor_y": [
+            0,
+            793.77,
+            -0.595,
+            0.65
+          ],
+          "ins_vel_hor_z": [
+            0,
+            156.755,
+            -0.2,
+            0.23
+          ],
+          "ins_yaw": [
+            0,
+            21905369.14,
+            0.0,
+            359.99
+          ],
+          "inv_path_radius": [
+            0,
+            -1131.1714000000002,
+            -0.2946,
+            0.2793
+          ],
+          "rate_body_hr_x": [
+            0,
+            1489.5932,
+            -11.6111,
+            9.2237
+          ],
+          "rate_body_hr_y": [
+            0,
+            42516.1112,
+            -10.4793,
+            9.3572
+          ],
+          "rate_body_hr_z": [
+            0,
+            -246572.6668,
+            -66.1126,
+            55.174200000000006
+          ],
+          "rate_hor_x": [
+            0,
+            75.1800000000004,
+            -11.53,
+            9.08
+          ],
+          "rate_hor_y": [
+            0,
+            124.98999999999995,
+            -10.48,
+            9.25
+          ],
+          "rate_hor_z": [
+            0,
+            -247081.44,
+            -66.27,
+            55.2
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            13666.05,
+            -4.36,
+            5.3500000000000005
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -48379.01079773307,
+            -12.388380877743622,
+            11.378218444627455
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -844.3730272783305,
+            -0.21621803530773132,
+            0.1985873748698972
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            -47384.69772691827,
+            -13.557830155349484,
+            12.27657748063307
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            -827.0189903969965,
+            -0.23662877563702278,
+            0.2142666979132375
+          ],
+          "speedo_obd": [
+            0,
+            2856704.6875,
+            0.0,
+            91.0625
+          ],
+          "time": [
+            0,
+            192932959540102.1,
+            1720095875.09,
+            1720098118.35
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            786255.7427732325,
+            -0.167605099045545,
+            25.11217429269991
+          ],
+          "vel_x_COR_ms": [
+            0,
+            780960.4765383813,
+            -0.2147234451435307,
+            24.96734689442873
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -3186.06110584846,
+            -0.6645117038558355,
+            0.6406748159620976
+          ],
+          "vel_y_COR_ms": [
+            0,
+            -2691.4994569361015,
+            -0.6827253522114356,
+            0.6557817879783655
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            2729941.65,
+            0.0,
+            86.55
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            758317.125,
+            0.0,
+            24.041666666666668
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            2710031.65,
+            0.0,
+            86.7
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            752786.5694444445,
+            0.0,
+            24.083333333333336
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            755551.8472222222,
+            0.0,
+            24.0625
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            2731620.05,
+            0.0,
+            87.35
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            758783.3472222222,
+            0.0,
+            24.26388888888889
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            2710484.05,
+            0.0,
+            87.15
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            752912.2361111112,
+            0.0,
+            24.208333333333336
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            755847.7916666667,
+            0.0,
+            24.180555555555557
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            755699.8194444445,
+            0.0,
+            24.10763888888889
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            758550.2361111112,
+            0.0,
+            24.13888888888889
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            752849.4027777778,
+            0.0,
+            24.118055555555557
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            -182366.71999999986,
+            -65.28,
+            55.03999999999999
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            -3182.899710062591,
+            -1.1393509357018983,
+            0.9606292202976788
+          ]
+        },
+        "sha256": "7e98de7f32eb003fd662a3b1161b5340f15a98f82c0cffc6ba7bf226bb002c48",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "train/ReVSTED_recording_4.h5",
+        "n": 270377,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            240737.35229052688,
+            -9.082675994956446,
+            11.255103993614531
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            1299354.1921101059,
+            0.0,
+            23.791255689330335
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            474.97867352475373,
+            -0.1528951136809815,
+            0.1529927174312997
+          ],
+          "acc_body_hr_x": [
+            0,
+            -465.80319999999995,
+            -0.6418,
+            0.4183
+          ],
+          "acc_body_hr_y": [
+            0,
+            -4059.1848,
+            -0.7676000000000001,
+            0.8707
+          ],
+          "acc_body_hr_z": [
+            0,
+            269564.2981,
+            0.7084,
+            1.3261
+          ],
+          "acc_hor_x": [
+            0,
+            728.9956,
+            -0.6068,
+            0.3868
+          ],
+          "acc_hor_y": [
+            0,
+            -2098.3928,
+            -0.7128,
+            0.8112
+          ],
+          "acc_hor_z": [
+            0,
+            270338.6364,
+            0.7148,
+            1.3308
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            -1184.9999999999995,
+            -6.825,
+            7.725
+          ],
+          "brake_pressure_obd": [
+            0,
+            231052.999417305,
+            0.0,
+            80.09091186523438
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            1295486.76,
+            -0.015,
+            23.72
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            21965.93,
+            -1.065,
+            1.02
+          ],
+          "delta_sw_deg": [
+            0,
+            688322.3145434856,
+            -618.453857421875,
+            612.5038452148438
+          ],
+          "delta_sw_rad": [
+            0,
+            12013.490703731874,
+            -10.794056083671288,
+            10.690208780124738
+          ],
+          "gnss_cog": [
+            0,
+            39607888.59,
+            0.0,
+            359.97
+          ],
+          "gnss_height": [
+            0,
+            100859862.84,
+            372.87,
+            373.46
+          ],
+          "gnss_lat_abs": [
+            0,
+            13190087.393587701,
+            48.7833472,
+            48.7846591
+          ],
+          "gnss_long_abs": [
+            0,
+            3101880.2037984002,
+            11.4704763,
+            11.4739403
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -16830292.419999998,
+            -141.35,
+            4.54
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -15024347.450000001,
+            -198.88,
+            55.7
+          ],
+          "gnss_sats_used": [
+            0,
+            4118593.0,
+            12.0,
+            17.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            4147969.0,
+            12.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            4800.686000000001,
+            0.014,
+            0.028
+          ],
+          "gnss_stddev_lat": [
+            0,
+            2459.3450000000003,
+            0.007,
+            0.014
+          ],
+          "gnss_stddev_long": [
+            0,
+            1882.7030000000002,
+            0.005,
+            0.011
+          ],
+          "ins_height": [
+            0,
+            100618734.28,
+            371.99,
+            372.57
+          ],
+          "ins_lat_abs": [
+            0,
+            13190087.373521801,
+            48.7833464,
+            48.7846598
+          ],
+          "ins_long_abs": [
+            0,
+            3101880.1199113,
+            11.4704753,
+            11.4739388
+          ],
+          "ins_pitch": [
+            0,
+            86543.53,
+            -1.74,
+            2.3000000000000003
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -16832500.06,
+            -141.44,
+            4.62
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -15030560.520000001,
+            -198.95,
+            55.59
+          ],
+          "ins_roll": [
+            0,
+            -112876.79999999999,
+            -4.26,
+            4.3500000000000005
+          ],
+          "ins_std_vel_x": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            2705.5699999999997,
+            0.01,
+            0.02
+          ],
+          "ins_stddev_lat": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            2703.7699999999995,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            5519.58,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            1298781.8,
+            -0.16,
+            23.815
+          ],
+          "ins_vel_hor_y": [
+            0,
+            1245.755,
+            -0.59,
+            0.535
+          ],
+          "ins_vel_hor_z": [
+            0,
+            476.07500000000005,
+            -0.19,
+            0.21
+          ],
+          "ins_yaw": [
+            0,
+            54830337.769999996,
+            0.0,
+            360.0
+          ],
+          "inv_path_radius": [
+            0,
+            -760.9691,
+            -0.2987,
+            0.3122
+          ],
+          "rate_body_hr_x": [
+            0,
+            1850.2855999999997,
+            -12.5499,
+            9.8303
+          ],
+          "rate_body_hr_y": [
+            0,
+            59479.520200000006,
+            -8.9268,
+            10.3289
+          ],
+          "rate_body_hr_z": [
+            0,
+            -220484.46490000005,
+            -50.2075,
+            60.779700000000005
+          ],
+          "rate_hor_x": [
+            0,
+            13.379999999999853,
+            -12.4,
+            9.8
+          ],
+          "rate_hor_y": [
+            0,
+            66.62000000000015,
+            -8.92,
+            10.35
+          ],
+          "rate_hor_z": [
+            0,
+            -221521.63999999998,
+            -50.3,
+            60.84
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            10833.28,
+            -4.8,
+            3.77
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -34073.60791035342,
+            -12.904531813231593,
+            12.61287859613516
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -594.6966460692522,
+            -0.22522656856924525,
+            0.22013625965687866
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            -41100.50073802185,
+            -14.805204240024834,
+            15.133647453135824
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            -717.3390620968406,
+            -0.2583995604186582,
+            0.26413197589327436
+          ],
+          "speedo_obd": [
+            0,
+            4726173.6875,
+            0.0,
+            86.3125
+          ],
+          "time": [
+            0,
+            465986486937157.25,
+            1723466699.84,
+            1723472107.36
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            1298398.5950804302,
+            -0.1337378562123161,
+            23.791243334076896
+          ],
+          "vel_x_COR_ms": [
+            0,
+            1295578.642378717,
+            -0.0199860687484221,
+            23.726892309863693
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -2322.734296725876,
+            -0.5414987707495659,
+            0.5615353044913678
+          ],
+          "vel_y_COR_ms": [
+            0,
+            -2717.0328346128085,
+            -0.6103584898670487,
+            0.5998136336332925
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            4511551.25,
+            0.0,
+            82.05
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            1253208.6805555555,
+            0.0,
+            22.791666666666668
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            4492547.4,
+            0.0,
+            82.1
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            1247929.8333333333,
+            0.0,
+            22.805555555555554
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            1250569.2569444445,
+            0.0,
+            22.791666666666668
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            4491654.45,
+            0.0,
+            82.5
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            1247681.7916666667,
+            0.0,
+            22.916666666666668
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            4471808.8,
+            0.0,
+            82.35
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            1242169.1111111112,
+            0.0,
+            22.875
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            1244925.451388889,
+            0.0,
+            22.881944444444446
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            1247747.3541666665,
+            0.0,
+            22.8125
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            1250445.236111111,
+            0.0,
+            22.819444444444446
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            1245049.4722222222,
+            0.0,
+            22.84027777777778
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            -88954.8799999998,
+            -49.92,
+            61.44
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            -1552.5555417164492,
+            -0.8712683625955694,
+            1.072330292425316
+          ]
+        },
+        "sha256": "86819a2b3cb3bbbb7128c2a158c68a003aa959a76c98122018d97240e2f495b3",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "train/ReVSTED_recording_5.h5",
+        "n": 138429,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            117301.39757576736,
+            -8.12215233623654,
+            12.453657533188714
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            710094.4846812154,
+            0.0,
+            23.789920719944416
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            201.81259310734237,
+            -0.1922250419360091,
+            0.1437265102092731
+          ],
+          "acc_body_hr_x": [
+            0,
+            -93.6376,
+            -0.5282,
+            0.4009
+          ],
+          "acc_body_hr_y": [
+            0,
+            -687.0752,
+            -0.8005,
+            0.8952
+          ],
+          "acc_body_hr_z": [
+            0,
+            137892.1532,
+            0.6235,
+            1.2933
+          ],
+          "acc_hor_x": [
+            0,
+            511.8344,
+            -0.5044000000000001,
+            0.3744
+          ],
+          "acc_hor_y": [
+            0,
+            317.6443999999998,
+            -0.732,
+            0.8292
+          ],
+          "acc_hor_z": [
+            0,
+            138404.17680000002,
+            0.6272,
+            1.2956
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            12998.55,
+            -6.975,
+            7.649999999999999
+          ],
+          "brake_pressure_obd": [
+            0,
+            240994.08995205164,
+            0.0,
+            61.45454406738281
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            707442.4,
+            -0.18,
+            23.695
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            11230.525000000001,
+            -0.985,
+            1.1
+          ],
+          "delta_sw_deg": [
+            0,
+            -382726.61958134174,
+            -620.9476318359375,
+            620.9476318359375
+          ],
+          "delta_sw_rad": [
+            0,
+            -6679.839646722216,
+            -10.837580657998672,
+            10.837580657998672
+          ],
+          "gnss_cog": [
+            0,
+            17372798.71,
+            0.0,
+            360.0
+          ],
+          "gnss_height": [
+            0,
+            51636325.66,
+            372.87,
+            373.44
+          ],
+          "gnss_lat_abs": [
+            0,
+            6753125.410737,
+            48.7833554,
+            48.7846582
+          ],
+          "gnss_long_abs": [
+            0,
+            1588103.6594247,
+            11.4704857,
+            11.4739136
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -8953558.23,
+            -140.44,
+            4.44
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -8635909.68,
+            -198.19,
+            53.74
+          ],
+          "gnss_sats_used": [
+            0,
+            2212569.0,
+            14.0,
+            17.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            2219366.0,
+            14.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            2580.089,
+            0.015,
+            0.029
+          ],
+          "gnss_stddev_lat": [
+            0,
+            1149.9810000000002,
+            0.007,
+            0.012
+          ],
+          "gnss_stddev_long": [
+            0,
+            885.447,
+            0.005,
+            0.01
+          ],
+          "ins_height": [
+            0,
+            51512823.43,
+            371.99,
+            372.55
+          ],
+          "ins_lat_abs": [
+            0,
+            6753125.435157301,
+            48.7833563,
+            48.7846589
+          ],
+          "ins_long_abs": [
+            0,
+            1588103.5615598,
+            11.4704873,
+            11.4739146
+          ],
+          "ins_pitch": [
+            0,
+            42372.84,
+            -1.86,
+            1.99
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -8950828.21,
+            -140.34,
+            4.5200000000000005
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -8643085.639999999,
+            -198.07,
+            53.81
+          ],
+          "ins_roll": [
+            0,
+            -58310.75000000001,
+            -4.4,
+            4.29
+          ],
+          "ins_std_vel_x": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            1415.3899999999999,
+            0.01,
+            0.02
+          ],
+          "ins_stddev_lat": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            1384.29,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            2623.74,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            709682.9750000001,
+            -0.145,
+            23.82
+          ],
+          "ins_vel_hor_y": [
+            0,
+            288.05000000000007,
+            -0.67,
+            0.53
+          ],
+          "ins_vel_hor_z": [
+            0,
+            200.97499999999997,
+            -0.23,
+            0.2
+          ],
+          "ins_yaw": [
+            0,
+            29318195.279999997,
+            0.0,
+            360.0
+          ],
+          "inv_path_radius": [
+            0,
+            -566.2622,
+            -0.2707,
+            0.1935
+          ],
+          "rate_body_hr_x": [
+            0,
+            1043.3137,
+            -10.9456,
+            11.5956
+          ],
+          "rate_body_hr_y": [
+            0,
+            39993.966,
+            -10.8954,
+            9.6618
+          ],
+          "rate_body_hr_z": [
+            0,
+            -54033.6862,
+            -67.8516,
+            52.9594
+          ],
+          "rate_hor_x": [
+            0,
+            10.870000000000061,
+            -10.95,
+            11.61
+          ],
+          "rate_hor_y": [
+            0,
+            -53.16000000000003,
+            -10.9,
+            9.65
+          ],
+          "rate_hor_z": [
+            0,
+            -54558.59999999998,
+            -68.06,
+            53.01
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            7805.6,
+            -4.63,
+            4.64
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -23867.304883456432,
+            -11.759123022653046,
+            7.356766221699919
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -416.56305379363624,
+            -0.2052354138923634,
+            0.1283997928681667
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            -27403.94540169886,
+            -12.971857527085287,
+            7.842783886071399
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            -478.28907529640514,
+            -0.22640162394724778,
+            0.13688240133430177
+          ],
+          "speedo_obd": [
+            0,
+            2584271.4375,
+            0.0,
+            86.1875
+          ],
+          "time": [
+            0,
+            238602422895173.12,
+            1723643391.34,
+            1723646173.63
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            709589.058004966,
+            -0.1488698209819752,
+            23.78986778237006
+          ],
+          "vel_x_COR_ms": [
+            0,
+            707508.5534000722,
+            -0.1860389151473866,
+            23.703388999181435
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -590.7834281847554,
+            -0.7243881345447944,
+            0.5814339366182435
+          ],
+          "vel_y_COR_ms": [
+            0,
+            -610.76820887136,
+            -0.7172239429167904,
+            0.5875462394166702
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            2463293.85,
+            0.0,
+            82.05
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            684248.2916666667,
+            0.0,
+            22.791666666666668
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            2458985.4499999997,
+            0.0,
+            81.95
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            683051.513888889,
+            0.0,
+            22.76388888888889
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            683649.9027777778,
+            0.0,
+            22.77777777777778
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            2453651.1500000004,
+            0.0,
+            82.3
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            681569.763888889,
+            0.0,
+            22.86111111111111
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            2448096.45,
+            0.0,
+            82.45
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            680026.7916666667,
+            0.0,
+            22.90277777777778
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            680798.2777777778,
+            0.0,
+            22.854166666666668
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            682224.0902777779,
+            0.0,
+            22.805555555555557
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            682909.0277777778,
+            0.0,
+            22.8125
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            681539.1527777778,
+            0.0,
+            22.819444444444443
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            8532.48000000012,
+            -66.56,
+            53.75999999999999
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            148.91986936056787,
+            -1.1616911501274259,
+            0.9382890058721514
+          ]
+        },
+        "sha256": "0ed5c731b705be5e5c4eab81eee6f0eabdec55f81bf6dedd5ff1fdd703aae129",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      }
+    ],
+    "valid": [
+      {
+        "file": "valid/ReVSTED_recording_5.h5",
+        "n": 46438,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            41756.77486270817,
+            -7.862875746836752,
+            9.261489791619432
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            259978.45517179466,
+            0.0,
+            22.66903278174151
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            199.957343548429,
+            -0.1387594982950408,
+            0.1042103360819443
+          ],
+          "acc_body_hr_x": [
+            0,
+            5.283199999999972,
+            -0.553,
+            0.3797
+          ],
+          "acc_body_hr_y": [
+            0,
+            -808.6437999999998,
+            -0.8606,
+            0.8558
+          ],
+          "acc_body_hr_z": [
+            0,
+            46168.620899999994,
+            0.7324,
+            1.2826
+          ],
+          "acc_hor_x": [
+            0,
+            207.6612,
+            -0.5236000000000001,
+            0.356
+          ],
+          "acc_hor_y": [
+            0,
+            -366.31560000000013,
+            -0.7848,
+            0.7972
+          ],
+          "acc_hor_z": [
+            0,
+            46437.362,
+            0.74,
+            1.288
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            -1343.1000000000013,
+            -7.35,
+            7.574999999999999
+          ],
+          "brake_pressure_obd": [
+            0,
+            33272.72723919153,
+            0.0,
+            75.36363983154297
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            258997.22499999998,
+            -0.01,
+            22.57
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            4482.925,
+            -0.99,
+            1.17
+          ],
+          "delta_sw_deg": [
+            0,
+            -1277747.3601808846,
+            -539.3970947265625,
+            623.3976440429688
+          ],
+          "delta_sw_rad": [
+            0,
+            -22300.89844382233,
+            -9.41425527867026,
+            10.88034143772542
+          ],
+          "gnss_cog": [
+            0,
+            5980977.01,
+            0.0,
+            359.97
+          ],
+          "gnss_height": [
+            0,
+            17325256.17,
+            372.87,
+            373.42
+          ],
+          "gnss_lat_abs": [
+            0,
+            2265435.0795514,
+            48.7833623,
+            48.7846348
+          ],
+          "gnss_long_abs": [
+            0,
+            532765.5065991001,
+            11.4705128,
+            11.4739067
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -2782845.11,
+            -139.68,
+            1.84
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -1920925.24,
+            -196.2,
+            53.23
+          ],
+          "gnss_sats_used": [
+            0,
+            750641.0,
+            14.0,
+            17.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            764898.0,
+            15.0,
+            17.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            900.1679999999999,
+            0.015,
+            0.03
+          ],
+          "gnss_stddev_lat": [
+            0,
+            377.6830000000001,
+            0.007,
+            0.011
+          ],
+          "gnss_stddev_long": [
+            0,
+            314.97400000000005,
+            0.006,
+            0.01
+          ],
+          "ins_height": [
+            0,
+            17283925.0,
+            371.99,
+            372.53
+          ],
+          "ins_lat_abs": [
+            0,
+            2265435.1088947,
+            48.7833614,
+            48.7846355
+          ],
+          "ins_long_abs": [
+            0,
+            532765.5102456,
+            11.4705118,
+            11.4739077
+          ],
+          "ins_pitch": [
+            0,
+            14452.66,
+            -1.49,
+            2.14
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -2779553.7399999998,
+            -139.78,
+            1.92
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -1920648.68,
+            -196.27,
+            53.3
+          ],
+          "ins_roll": [
+            0,
+            -25461.21,
+            -5.15,
+            4.23
+          ],
+          "ins_std_vel_x": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            464.4,
+            0.01,
+            0.02
+          ],
+          "ins_stddev_lat": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            464.38,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            842.81,
+            0.01,
+            0.02
+          ],
+          "ins_vel_hor_x": [
+            0,
+            259905.31000000003,
+            -0.11,
+            22.685
+          ],
+          "ins_vel_hor_y": [
+            0,
+            366.28000000000003,
+            -0.61,
+            0.6
+          ],
+          "ins_vel_hor_z": [
+            0,
+            199.885,
+            -0.175,
+            0.135
+          ],
+          "ins_yaw": [
+            0,
+            9138516.7,
+            0.03,
+            359.96
+          ],
+          "inv_path_radius": [
+            0,
+            -279.0339,
+            -0.2137,
+            0.2188
+          ],
+          "rate_body_hr_x": [
+            0,
+            478.7116000000002,
+            -8.9769,
+            10.2799
+          ],
+          "rate_body_hr_y": [
+            0,
+            19941.7102,
+            -7.8738,
+            6.4278
+          ],
+          "rate_body_hr_z": [
+            0,
+            -60975.1165,
+            -56.2967,
+            55.9994
+          ],
+          "rate_hor_x": [
+            0,
+            -3.550000000000111,
+            -8.82,
+            10.23
+          ],
+          "rate_hor_y": [
+            0,
+            -4.110000000000005,
+            -7.87,
+            5.95
+          ],
+          "rate_hor_z": [
+            0,
+            -61175.34,
+            -56.39,
+            55.99
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            5194.74,
+            -4.45,
+            4.68
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -10143.490994947524,
+            -8.654706517523588,
+            8.586723852930344
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -177.0373155082298,
+            -0.15105312452459893,
+            0.14986660319316786
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            -13892.79680995661,
+            -9.815220639385911,
+            9.236916286122076
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            -242.47504664430772,
+            -0.1713079169669872,
+            0.16121460192391684
+          ],
+          "speedo_obd": [
+            0,
+            945931.5625,
+            0.0,
+            82.25
+          ],
+          "time": [
+            0,
+            80042702689443.45,
+            1723646173.65,
+            1723647106.56
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            259799.63393098663,
+            -0.1151124184449417,
+            22.669024846064683
+          ],
+          "vel_x_COR_ms": [
+            0,
+            259009.95386167266,
+            -0.0188013864620667,
+            22.574973363484883
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -619.2409554677076,
+            -0.5145085484736884,
+            0.6058283279718198
+          ],
+          "vel_y_COR_ms": [
+            0,
+            -868.1910613767743,
+            -0.5669471103529282,
+            0.6272773483885418
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            903292.05,
+            0.0,
+            78.3
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            250914.45833333334,
+            0.0,
+            21.75
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            898280.6000000001,
+            0.0,
+            78.25
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            249522.3888888889,
+            0.0,
+            21.73611111111111
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            250218.42361111112,
+            0.0,
+            21.743055555555557
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            900627.25,
+            0.0,
+            78.7
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            250174.2361111111,
+            0.0,
+            21.861111111111114
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            895085.4,
+            0.0,
+            78.55
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            248634.8333333333,
+            0.0,
+            21.819444444444443
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            249404.53472222222,
+            0.0,
+            21.805555555555557
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            249811.4791666667,
+            0.0,
+            21.774305555555557
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            250544.34722222222,
+            0.0,
+            21.805555555555557
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            249078.61111111112,
+            0.0,
+            21.77777777777778
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            -39170.559999999976,
+            -56.31999999999999,
+            56.31999999999999
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            -683.6552418499898,
+            -0.9829694347232063,
+            0.9829694347232063
+          ]
+        },
+        "sha256": "ed8eba00a521a3b8d094713d2db0ff5de7a433df8fedae63d0db4a8bc22145c3",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "valid/ReVSTED_recording_6.h5",
+        "n": 47394,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            44508.17936337316,
+            -8.30748810168825,
+            11.361411147960638
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            210045.2074581242,
+            0.0,
+            8.226273307654587
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            152.9179585913935,
+            -0.0663975236142985,
+            0.0701560516762416
+          ],
+          "acc_body_hr_x": [
+            0,
+            -115.84679999999999,
+            -0.412,
+            0.1769
+          ],
+          "acc_body_hr_y": [
+            0,
+            9.578500000000112,
+            -0.2673,
+            0.2987
+          ],
+          "acc_body_hr_z": [
+            0,
+            47344.1274,
+            0.887,
+            1.1497
+          ],
+          "acc_hor_x": [
+            0,
+            61.605599999999995,
+            -0.3912,
+            0.1864
+          ],
+          "acc_hor_y": [
+            0,
+            213.53040000000004,
+            -0.2356,
+            0.2844
+          ],
+          "acc_hor_z": [
+            0,
+            47392.5476,
+            0.888,
+            1.1504
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            6642.2249999999985,
+            -2.325,
+            2.85
+          ],
+          "brake_pressure_obd": [
+            0,
+            48655.272349357605,
+            0.0,
+            75.81818389892578
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            208423.95,
+            -0.01,
+            8.195
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            3412.2,
+            -0.495,
+            0.515
+          ],
+          "delta_sw_deg": [
+            0,
+            489221.5066383779,
+            -569.4097900390625,
+            520.978271484375
+          ],
+          "delta_sw_rad": [
+            0,
+            8538.526062406992,
+            -9.938075629271252,
+            9.09278616875123
+          ],
+          "gnss_cog": [
+            0,
+            7364950.149999999,
+            0.0,
+            359.93
+          ],
+          "gnss_height": [
+            0,
+            17678725.4,
+            372.9,
+            373.36
+          ],
+          "gnss_lat_abs": [
+            0,
+            2312070.7099584,
+            48.7833706,
+            48.7846209
+          ],
+          "gnss_long_abs": [
+            0,
+            543717.4113837001,
+            11.4705446,
+            11.4737969
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -3056917.6199999996,
+            -138.76,
+            0.29
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -3130434.2199999997,
+            -193.86,
+            45.16
+          ],
+          "gnss_sats_used": [
+            0,
+            758208.0,
+            13.0,
+            18.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            765082.0,
+            14.0,
+            18.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            797.9180000000001,
+            0.014,
+            0.023
+          ],
+          "gnss_stddev_lat": [
+            0,
+            482.7699999999999,
+            0.008,
+            0.015
+          ],
+          "gnss_stddev_long": [
+            0,
+            349.46600000000007,
+            0.006,
+            0.009
+          ],
+          "ins_height": [
+            0,
+            17636531.68,
+            372.01,
+            372.47
+          ],
+          "ins_lat_abs": [
+            0,
+            2312070.7008229,
+            48.7833698,
+            48.7846216
+          ],
+          "ins_long_abs": [
+            0,
+            543717.4131908,
+            11.4705463,
+            11.473798
+          ],
+          "ins_pitch": [
+            0,
+            12951.470000000001,
+            -0.7000000000000001,
+            1.35
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -3057931.52,
+            -138.85,
+            0.37
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -3130304.2100000004,
+            -193.74,
+            45.24
+          ],
+          "ins_roll": [
+            0,
+            -11927.44,
+            -2.14,
+            1.76
+          ],
+          "ins_std_vel_x": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_lat": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            473.93999999999994,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            861.7299999999999,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            209899.865,
+            -0.145,
+            8.225
+          ],
+          "ins_vel_hor_y": [
+            0,
+            -273.755,
+            -0.195,
+            0.15
+          ],
+          "ins_vel_hor_z": [
+            0,
+            153.12,
+            -0.09,
+            0.075
+          ],
+          "ins_yaw": [
+            0,
+            9257621.690000001,
+            0.05,
+            360.0
+          ],
+          "inv_path_radius": [
+            0,
+            -51.00620000000003,
+            -0.2723,
+            0.2453
+          ],
+          "rate_body_hr_x": [
+            0,
+            200.3672999999999,
+            -2.3982,
+            2.1824
+          ],
+          "rate_body_hr_y": [
+            0,
+            4470.2481,
+            -8.0807,
+            3.4051
+          ],
+          "rate_body_hr_z": [
+            0,
+            12651.564699999984,
+            -39.0164,
+            45.1338
+          ],
+          "rate_hor_x": [
+            0,
+            -70.28000000000006,
+            -2.39,
+            2.22
+          ],
+          "rate_hor_y": [
+            0,
+            20.079999999999988,
+            -8.08,
+            3.4
+          ],
+          "rate_hor_z": [
+            0,
+            12484.490000000005,
+            -39.04,
+            45.13
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            -2199.6099999999988,
+            -3.39,
+            3.24
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -5429.5201512106305,
+            -11.701118832782289,
+            9.490447106661287
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -94.76300344200585,
+            -0.20422304979916675,
+            0.16563954949760895
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            2242.055096127728,
+            -12.079710905629709,
+            10.559234028735895
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            39.131243438546825,
+            -0.21083072799230446,
+            0.1842934002900669
+          ],
+          "speedo_obd": [
+            0,
+            763440.8125,
+            0.0,
+            29.9375
+          ],
+          "time": [
+            0,
+            81661567953191.22,
+            1723035521.2,
+            1723036469.06
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            209921.30312407194,
+            -0.1217986593626519,
+            8.226263443845518
+          ],
+          "vel_x_COR_ms": [
+            0,
+            208456.81658403005,
+            -0.0185847396445679,
+            8.196802793633339
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            -73.10483540323372,
+            -0.4942430316227401,
+            0.5497586183990826
+          ],
+          "vel_y_COR_ms": [
+            0,
+            627.8355376315255,
+            -0.5010084969993632,
+            0.6101193753059854
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            726994.7,
+            0.0,
+            28.5
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            201942.97222222222,
+            0.0,
+            7.916666666666667
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            727903.8999999999,
+            0.0,
+            28.45
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            202195.52777777778,
+            0.0,
+            7.902777777777778
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            202069.25,
+            0.0,
+            7.909722222222222
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            724453.1,
+            0.0,
+            28.7
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            201236.97222222225,
+            0.0,
+            7.972222222222222
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            725265.0499999999,
+            0.0,
+            28.6
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            201462.5138888889,
+            0.0,
+            7.9444444444444455
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            201349.74305555556,
+            0.0,
+            7.930555555555555
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            201709.49652777778,
+            0.0,
+            7.909722222222222
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            201589.97222222225,
+            0.0,
+            7.930555555555555
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            201829.02083333334,
+            0.0,
+            7.916666666666668
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            36761.59999999999,
+            -38.400000000000006,
+            46.08000000000001
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            641.6109583011473,
+            -0.6702064327658226,
+            0.8042477193189873
+          ]
+        },
+        "sha256": "0ca967df7d6ad9e20037934eb51d24e685e75b75a3219d6ff1ed201a4ec1a0b7",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "file": "test/ReVSTED_recording_6.h5",
+        "n": 146405,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            137501.63142168632,
+            -10.557249151055183,
+            12.183656585987388
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            593501.216479844,
+            0.0,
+            7.199993339856427
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            136.52386382232422,
+            -0.069152874904422,
+            0.079652349654116
+          ],
+          "acc_body_hr_x": [
+            0,
+            -447.707,
+            -0.2306,
+            0.2003
+          ],
+          "acc_body_hr_y": [
+            0,
+            -617.9835,
+            -0.2542,
+            0.2835
+          ],
+          "acc_body_hr_z": [
+            0,
+            146266.242,
+            0.8159000000000001,
+            1.142
+          ],
+          "acc_hor_x": [
+            0,
+            125.25800000000002,
+            -0.204,
+            0.1896
+          ],
+          "acc_hor_y": [
+            0,
+            235.8864000000001,
+            -0.2196,
+            0.2572
+          ],
+          "acc_hor_z": [
+            0,
+            146381.15840000001,
+            0.8156,
+            1.1428
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            14663.849999999995,
+            -2.025,
+            2.625
+          ],
+          "brake_pressure_obd": [
+            0,
+            101070.36366456747,
+            0.0,
+            70.09091186523438
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            589895.255,
+            -0.01,
+            7.155
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            10413.82,
+            -0.465,
+            0.515
+          ],
+          "delta_sw_deg": [
+            0,
+            1748865.5103850663,
+            -616.9663696289062,
+            622.4351196289062
+          ],
+          "delta_sw_rad": [
+            0,
+            30523.461330790495,
+            -10.76809452410076,
+            10.863542217569199
+          ],
+          "gnss_cog": [
+            0,
+            21329345.38,
+            0.0,
+            359.96
+          ],
+          "gnss_height": [
+            0,
+            54612889.99,
+            372.89,
+            373.39
+          ],
+          "gnss_lat_abs": [
+            0,
+            7142222.8946335,
+            48.783372,
+            48.7846067
+          ],
+          "gnss_long_abs": [
+            0,
+            1679587.9489785,
+            11.4705307,
+            11.4738421
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -9913455.76,
+            -138.6,
+            -1.29
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -10532951.48,
+            -194.88,
+            48.48
+          ],
+          "gnss_sats_used": [
+            0,
+            2364385.0,
+            14.0,
+            18.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            2379678.0,
+            14.0,
+            18.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            2466.0470000000005,
+            0.014,
+            0.026
+          ],
+          "gnss_stddev_lat": [
+            0,
+            1269.471,
+            0.007,
+            0.014
+          ],
+          "gnss_stddev_long": [
+            0,
+            1020.0029999999999,
+            0.006,
+            0.011
+          ],
+          "ins_height": [
+            0,
+            54482187.3,
+            372.0,
+            372.5
+          ],
+          "ins_lat_abs": [
+            0,
+            7142222.898120999,
+            48.7833713,
+            48.7846074
+          ],
+          "ins_long_abs": [
+            0,
+            1679587.9104356,
+            11.4705323,
+            11.4738431
+          ],
+          "ins_pitch": [
+            0,
+            43656.20999999999,
+            -0.65,
+            1.61
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -9913072.78,
+            -138.68,
+            -1.2
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -10535785.469999999,
+            -194.77,
+            48.56
+          ],
+          "ins_roll": [
+            0,
+            -48734.84,
+            -2.16,
+            1.72
+          ],
+          "ins_std_vel_x": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            1469.06,
+            0.01,
+            0.02
+          ],
+          "ins_stddev_lat": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            1464.05,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            2799.66,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            593082.7450000001,
+            -0.055,
+            7.205
+          ],
+          "ins_vel_hor_y": [
+            0,
+            -337.635,
+            -0.165,
+            0.155
+          ],
+          "ins_vel_hor_z": [
+            0,
+            136.29,
+            -0.075,
+            0.1
+          ],
+          "ins_yaw": [
+            0,
+            30168234.650000002,
+            0.01,
+            359.98
+          ],
+          "inv_path_radius": [
+            0,
+            87.38560000000012,
+            -0.2965,
+            0.3147
+          ],
+          "rate_body_hr_x": [
+            0,
+            9.639900000000068,
+            -3.2644,
+            2.8637
+          ],
+          "rate_body_hr_y": [
+            0,
+            10275.2847,
+            -3.4818,
+            5.2259
+          ],
+          "rate_body_hr_z": [
+            0,
+            31870.49010000001,
+            -38.712900000000005,
+            41.9653
+          ],
+          "rate_hor_x": [
+            0,
+            -22.349999999999937,
+            -3.27,
+            2.87
+          ],
+          "rate_hor_y": [
+            0,
+            -12.120000000000028,
+            -3.48,
+            5.23
+          ],
+          "rate_hor_z": [
+            0,
+            31360.880000000012,
+            -38.72,
+            41.96
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            -4529.960000000001,
+            -4.04,
+            3.6
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            -1894.6819825508355,
+            -12.878970698484112,
+            12.39236450083751
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            -33.068438873725825,
+            -0.22478044295642163,
+            0.21628756264687815
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            26777.12709680458,
+            -13.505913740037744,
+            14.62899730481631
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            467.3490320642302,
+            -0.23572266325400015,
+            0.25532416923442114
+          ],
+          "speedo_obd": [
+            0,
+            2158859.875,
+            0.0,
+            26.1875
+          ],
+          "time": [
+            0,
+            252261368623127.4,
+            1723036469.08,
+            1723039397.74
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            593137.013305038,
+            -0.0487958781079357,
+            7.199993193215917
+          ],
+          "vel_x_COR_ms": [
+            0,
+            589997.7682411019,
+            -0.010551882425258,
+            7.1559639854377695
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            167.42099427952053,
+            -0.4831715355127141,
+            0.533687142893075
+          ],
+          "vel_y_COR_ms": [
+            0,
+            2435.04964409991,
+            -0.4963979118415853,
+            0.553017549389522
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            2056295.3000000003,
+            0.0,
+            24.95
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            571193.138888889,
+            0.0,
+            6.930555555555555
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            2058003.7500000002,
+            0.0,
+            24.95
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            571667.7083333333,
+            0.0,
+            6.930555555555555
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            571430.4236111111,
+            0.0,
+            6.923611111111111
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            2048046.35,
+            0.0,
+            25.15
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            568901.763888889,
+            0.0,
+            6.986111111111111
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            2050234.2000000002,
+            0.0,
+            25.0
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            569509.5,
+            0.0,
+            6.944444444444445
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            569205.6319444445,
+            0.0,
+            6.965277777777778
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            570318.0277777778,
+            0.0,
+            6.940972222222221
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            570047.451388889,
+            0.0,
+            6.951388888888889
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            570588.6041666667,
+            0.0,
+            6.930555555555555
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            107461.12000000007,
+            -38.400000000000006,
+            42.24000000000001
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            1875.5503618807302,
+            -0.6702064327658226,
+            0.737227076042405
+          ]
+        },
+        "sha256": "3c24869555acb75ac67a8e5a951198e23d0a39d1b628330c2c0b61678b7392f9",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      },
+      {
+        "file": "test/ReVSTED_recording_7.h5",
+        "n": 41261,
+        "stats": {
+          "Correvit_slip_angle_poi": [
+            0,
+            16998.79202053552,
+            -10.781144723571888,
+            12.126280610670616
+          ],
+          "INS_totalvelCOG_hor": [
+            0,
+            289504.2462441171,
+            0.0,
+            19.56617145889742
+          ],
+          "INS_velCOG_hor_z": [
+            0,
+            -6.268752136244521,
+            -0.1387269568435953,
+            0.1566107272473438
+          ],
+          "acc_body_hr_x": [
+            0,
+            228.04649999999998,
+            -0.6638000000000001,
+            0.3545
+          ],
+          "acc_body_hr_y": [
+            0,
+            1624.8614000000002,
+            -0.8576,
+            0.9337
+          ],
+          "acc_body_hr_z": [
+            0,
+            40847.1006,
+            0.7157,
+            1.3431
+          ],
+          "acc_hor_x": [
+            0,
+            389.7368,
+            -0.6272,
+            0.3364
+          ],
+          "acc_hor_y": [
+            0,
+            1620.6668,
+            -0.7776000000000001,
+            0.8588
+          ],
+          "acc_hor_z": [
+            0,
+            41257.1844,
+            0.7232000000000001,
+            1.3444
+          ],
+          "acc_y_CAN_ms2": [
+            0,
+            20354.4,
+            -7.425,
+            8.1
+          ],
+          "brake_pressure_obd": [
+            0,
+            173268.54586440325,
+            0.0,
+            52.3636360168457
+          ],
+          "correvit_vel_x_poi": [
+            0,
+            288678.015,
+            -0.01,
+            19.515
+          ],
+          "correvit_vel_y_poi": [
+            0,
+            2631.03,
+            -1.115,
+            1.26
+          ],
+          "delta_sw_deg": [
+            0,
+            1824286.030435145,
+            -514.5032348632812,
+            622.4351196289062
+          ],
+          "delta_sw_rad": [
+            0,
+            31839.797729230766,
+            -8.979775460525936,
+            10.863542217569199
+          ],
+          "gnss_cog": [
+            0,
+            5273820.48,
+            0.0,
+            359.98
+          ],
+          "gnss_height": [
+            0,
+            15391770.74,
+            372.89,
+            373.4
+          ],
+          "gnss_lat_abs": [
+            0,
+            2012880.9192920001,
+            48.7833762,
+            48.7845959
+          ],
+          "gnss_long_abs": [
+            0,
+            473370.87855330005,
+            11.4705312,
+            11.4737134
+          ],
+          "gnss_pos_rel_x": [
+            0,
+            -2359276.41,
+            -138.13,
+            -2.49
+          ],
+          "gnss_pos_rel_y": [
+            0,
+            -1771208.2000000002,
+            -194.84,
+            39.02
+          ],
+          "gnss_sats_used": [
+            0,
+            606581.0,
+            13.0,
+            15.0
+          ],
+          "gnss_sats_visible": [
+            0,
+            612580.0,
+            14.0,
+            15.0
+          ],
+          "gnss_stddev_height": [
+            0,
+            695.1160000000001,
+            0.014,
+            0.024
+          ],
+          "gnss_stddev_lat": [
+            0,
+            413.82399999999996,
+            0.008,
+            0.015
+          ],
+          "gnss_stddev_long": [
+            0,
+            298.332,
+            0.006,
+            0.01
+          ],
+          "ins_height": [
+            0,
+            15354919.219999999,
+            372.0,
+            372.5
+          ],
+          "ins_lat_abs": [
+            0,
+            2012880.8984858,
+            48.7833754,
+            48.7845965
+          ],
+          "ins_long_abs": [
+            0,
+            473370.89099439996,
+            11.4705328,
+            11.4737117
+          ],
+          "ins_pitch": [
+            0,
+            11305.49,
+            -1.62,
+            2.35
+          ],
+          "ins_pos_rel_x": [
+            0,
+            -2361585.2,
+            -138.22,
+            -2.42
+          ],
+          "ins_pos_rel_y": [
+            0,
+            -1770296.81,
+            -194.73,
+            38.9
+          ],
+          "ins_roll": [
+            0,
+            -75.53000000000111,
+            -4.72,
+            4.64
+          ],
+          "ins_std_vel_x": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_y": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_std_vel_z": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_lat": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_long": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_pitch": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_roll": [
+            0,
+            412.60999999999996,
+            0.01,
+            0.01
+          ],
+          "ins_stddev_yaw": [
+            0,
+            760.8399999999999,
+            0.01,
+            0.03
+          ],
+          "ins_vel_hor_x": [
+            0,
+            289062.07,
+            -0.19,
+            19.58
+          ],
+          "ins_vel_hor_y": [
+            0,
+            -1012.6499999999999,
+            -0.71,
+            0.59
+          ],
+          "ins_vel_hor_z": [
+            0,
+            -6.53000000000001,
+            -0.185,
+            0.225
+          ],
+          "ins_yaw": [
+            0,
+            7374907.58,
+            0.09,
+            360.0
+          ],
+          "inv_path_radius": [
+            0,
+            266.145,
+            -0.2404,
+            0.308
+          ],
+          "rate_body_hr_x": [
+            0,
+            -444.32470000000023,
+            -11.661,
+            10.8358
+          ],
+          "rate_body_hr_y": [
+            0,
+            29227.832400000003,
+            -10.8985,
+            9.775
+          ],
+          "rate_body_hr_z": [
+            0,
+            113472.90079999997,
+            -66.7013,
+            63.7734
+          ],
+          "rate_hor_x": [
+            0,
+            67.90000000000002,
+            -11.37,
+            10.8
+          ],
+          "rate_hor_y": [
+            0,
+            -23.50000000000003,
+            -10.89,
+            9.78
+          ],
+          "rate_hor_z": [
+            0,
+            113380.20000000004,
+            -66.83,
+            63.85
+          ],
+          "side_slip_angle_adma_poi": [
+            0,
+            -7492.66,
+            -4.89,
+            5.04
+          ],
+          "sideslip_angle_ADMA_deg": [
+            0,
+            5666.9938376601785,
+            -9.960029200594825,
+            11.96725701149552
+          ],
+          "sideslip_angle_ADMA_rad": [
+            0,
+            98.9077011573991,
+            -0.17383530314515847,
+            0.2088680372829737
+          ],
+          "sideslip_angle_COR_deg": [
+            0,
+            7917.0310434566545,
+            -9.959985113197163,
+            12.81937627241056
+          ],
+          "sideslip_angle_COR_rad": [
+            0,
+            138.1782586909209,
+            -0.17383453367491064,
+            0.2237403240056018
+          ],
+          "speedo_obd": [
+            0,
+            1054168.1875,
+            0.0,
+            71.0625
+          ],
+          "time": [
+            0,
+            71094125076869.4,
+            1723034052.8,
+            1723034878.0
+          ],
+          "vel_x_ADMA_ms": [
+            0,
+            289258.133189915,
+            -0.1739025369663459,
+            19.56616076076216
+          ],
+          "vel_x_COR_ms": [
+            0,
+            288732.08190147055,
+            -0.017460573664801,
+            19.52051543190571
+          ],
+          "vel_y_ADMA_ms": [
+            0,
+            814.2872611659717,
+            -0.6694253870223151,
+            0.702062928587929
+          ],
+          "vel_y_COR_ms": [
+            0,
+            1143.9294464068967,
+            -0.6609631915932839,
+            0.7045609156119033
+          ],
+          "wheel_vel_fl_CAN_kmh": [
+            0,
+            998881.45,
+            0.0,
+            67.6
+          ],
+          "wheel_vel_fl_CAN_ms": [
+            0,
+            277467.0694444445,
+            0.0,
+            18.77777777777778
+          ],
+          "wheel_vel_fr_CAN_kmh": [
+            0,
+            1008204.6499999999,
+            0.0,
+            67.55
+          ],
+          "wheel_vel_fr_CAN_ms": [
+            0,
+            280056.84722222225,
+            0.0,
+            18.76388888888889
+          ],
+          "wheel_vel_fx_CAN_ms": [
+            0,
+            278761.9583333333,
+            0.0,
+            18.770833333333336
+          ],
+          "wheel_vel_rl_CAN_kmh": [
+            0,
+            997384.5999999999,
+            0.0,
+            67.8
+          ],
+          "wheel_vel_rl_CAN_ms": [
+            0,
+            277051.2777777778,
+            0.0,
+            18.833333333333332
+          ],
+          "wheel_vel_rr_CAN_kmh": [
+            0,
+            1006201.95,
+            0.0,
+            67.7
+          ],
+          "wheel_vel_rr_CAN_ms": [
+            0,
+            279500.5416666667,
+            0.0,
+            18.805555555555557
+          ],
+          "wheel_vel_rx_CAN_ms": [
+            0,
+            278275.90972222225,
+            0.0,
+            18.805555555555557
+          ],
+          "wheel_vel_x_CAN_ms": [
+            0,
+            278518.9340277778,
+            0.0,
+            18.78472222222222
+          ],
+          "wheel_vel_xl_CAN_ms": [
+            0,
+            277259.1736111111,
+            0.0,
+            18.805555555555557
+          ],
+          "wheel_vel_xr_CAN_ms": [
+            0,
+            279778.69444444444,
+            0.0,
+            18.763888888888893
+          ],
+          "yaw_rate_CAN_degs": [
+            0,
+            132911.36000000004,
+            -65.28,
+            64.0
+          ],
+          "yaw_rate_CAN_rads": [
+            0,
+            2319.7408453034914,
+            -1.1393509357018983,
+            1.117010721276371
+          ]
+        },
+        "sha256": "24fab9b62cdeb499b0747d20efceeaab897bbcc57d2d5bdbb9b3d74ac9c1bbec",
+        "columns": [
+          "Correvit_slip_angle_poi",
+          "INS_totalvelCOG_hor",
+          "INS_velCOG_hor_z",
+          "acc_body_hr_x",
+          "acc_body_hr_y",
+          "acc_body_hr_z",
+          "acc_hor_x",
+          "acc_hor_y",
+          "acc_hor_z",
+          "acc_y_CAN_ms2",
+          "brake_pressure_obd",
+          "correvit_vel_x_poi",
+          "correvit_vel_y_poi",
+          "delta_sw_deg",
+          "delta_sw_rad",
+          "gnss_cog",
+          "gnss_height",
+          "gnss_lat_abs",
+          "gnss_long_abs",
+          "gnss_pos_rel_x",
+          "gnss_pos_rel_y",
+          "gnss_sats_used",
+          "gnss_sats_visible",
+          "gnss_stddev_height",
+          "gnss_stddev_lat",
+          "gnss_stddev_long",
+          "ins_height",
+          "ins_lat_abs",
+          "ins_long_abs",
+          "ins_pitch",
+          "ins_pos_rel_x",
+          "ins_pos_rel_y",
+          "ins_roll",
+          "ins_std_vel_x",
+          "ins_std_vel_y",
+          "ins_std_vel_z",
+          "ins_stddev_lat",
+          "ins_stddev_long",
+          "ins_stddev_pitch",
+          "ins_stddev_roll",
+          "ins_stddev_yaw",
+          "ins_vel_hor_x",
+          "ins_vel_hor_y",
+          "ins_vel_hor_z",
+          "ins_yaw",
+          "inv_path_radius",
+          "rate_body_hr_x",
+          "rate_body_hr_y",
+          "rate_body_hr_z",
+          "rate_hor_x",
+          "rate_hor_y",
+          "rate_hor_z",
+          "side_slip_angle_adma_poi",
+          "sideslip_angle_ADMA_deg",
+          "sideslip_angle_ADMA_rad",
+          "sideslip_angle_COR_deg",
+          "sideslip_angle_COR_rad",
+          "speedo_obd",
+          "time",
+          "vel_x_ADMA_ms",
+          "vel_x_COR_ms",
+          "vel_y_ADMA_ms",
+          "vel_y_COR_ms",
+          "wheel_vel_fl_CAN_kmh",
+          "wheel_vel_fl_CAN_ms",
+          "wheel_vel_fr_CAN_kmh",
+          "wheel_vel_fr_CAN_ms",
+          "wheel_vel_fx_CAN_ms",
+          "wheel_vel_rl_CAN_kmh",
+          "wheel_vel_rl_CAN_ms",
+          "wheel_vel_rr_CAN_kmh",
+          "wheel_vel_rr_CAN_ms",
+          "wheel_vel_rx_CAN_ms",
+          "wheel_vel_x_CAN_ms",
+          "wheel_vel_xl_CAN_ms",
+          "wheel_vel_xr_CAN_ms",
+          "yaw_rate_CAN_degs",
+          "yaw_rate_CAN_rads"
+        ]
+      }
+    ]
+  },
+  "samples": {
+    "train": 656826,
+    "valid": 93832,
+    "test": 187666
+  }
+}
