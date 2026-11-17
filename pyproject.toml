@@ -28,6 +28,8 @@ tune = [
     "torch==2.12.0",
     "tsfast",
 ]
+# OpenStreetMap background of the bird's-eye animation (scripts/animate.py); without it the map is left out.
+anim = ["contextily>=1.7.1"]
 
 [dependency-groups]
 dev = ["pytest>=8.4.0"]
