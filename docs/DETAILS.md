@@ -227,8 +227,8 @@ validation split to within 0.005 deg.
 bundle format (`--preds`, `--label`). By default it shows the shipped GRU with built-in mirror
 symmetry in the window of the paper's Fig. 2 (test recording 7, 8 s of the 60 s window, real time).
 The car is drawn from a small `Vehicle` config: the Smart Fortwo 453 of ReV-StED, or a generic car
-of about VW Golf size (`--vehicle generic`). The front tyres turn by the true road-wheel angle; the
-scene draws the sideslip angles ×3, the text line and the strip show the true values. The script
+of about VW Golf size (`--vehicle generic`). The sideslip angles and the road-wheel angle of
+the front tyres are drawn to scale, under a world-fixed 2 m grid. The script
 asserts the INS conventions on load (heading = `ins_yaw` + 90°, beta positive left, INS point
 0.9 m behind the CoG). The OpenStreetMap background needs `uv sync --extra anim`; tiles are
 fetched with the User-Agent `sideslip_bench-animate`, cached in `data/osm_tiles`, and credited in

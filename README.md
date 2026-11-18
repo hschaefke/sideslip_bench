@@ -2,7 +2,7 @@
 
 <p align="center"><img src="docs/birdseye.gif" width="720" alt="The test car seen from above on a ReV-StED test drive, with the measured sideslip angle and an estimate"></p>
 <p align="center"><sub>The ReV-StED Smart in a slow corner: reference sideslip angle (black) and the GRU with built-in
-mirror symmetry (orange). Angles in the scene are drawn ×3.</sub></p>
+mirror symmetry (orange). All angles are drawn to scale.</sub></p>
 
 The sideslip angle β is the angle between where a car points and where it actually moves.
 Stability control and automated driving rely on it, but series cars cannot measure it, so they
@@ -81,7 +81,7 @@ mirror symmetry are bundled too ([more](docs/DETAILS.md#networks-with-built-in-m
 
 ## Rules
 
-Six rules keep results comparable. `ssb.evaluate` applies rules 4 and 5 for you.
+Five rules keep results comparable. `ssb.evaluate` applies rules 4 and 5 for you.
 
 1. The test split never enters a decision: training, tuning, model and seed selection use the
    training and validation splits only.
@@ -90,13 +90,28 @@ Six rules keep results comparable. `ssb.evaluate` applies rules 4 and 5 for you.
    Correvit or ADMA references.
 4. The first 20 samples of every test recording are not scored (warm-up).
 5. Only samples with v_x ≥ 5 km/h on the speedometer count.
-6. Neural methods are reported as the median over at least three seeds fixed before training. No
-   run is discarded or selected, and an ensemble of runs is not one method.
 
 ## Citation
 
-If you use this benchmark, please cite the paper (submitted to IFAC SYSID 2027) via GitHub's
-"Cite this repository" button, and the ReV-StED dataset: [doi:10.5281/zenodo.15270060](https://doi.org/10.5281/zenodo.15270060).
+If you use this benchmark, please cite the paper (submitted to IFAC SYSID 2027) and the dataset.
+GitHub's "Cite this repository" button reads the same entries from `CITATION.cff`.
+
+```bibtex
+@unpublished{Schaefke2027SideslipBench,
+  author = {Sch{\"a}fke, Hendrik and Weber, Daniel O. M. and Seel, Thomas and Muhmann, Christian and Bank, Dennis and Ehlers, Simon F. G.},
+  title  = {An Open-Source Benchmark for Vehicle Sideslip Angle Estimation},
+  note   = {Submitted to the 21st IFAC Symposium on System Identification (SYSID 2027)},
+  year   = {2026},
+}
+
+@misc{ReVStED2025,
+  author       = {Kalyanasundaram, A. and Chandra Sekaran, K. and Lange, M. and St{\"a}uber, P. and Utschick, W. and Botsch, M.},
+  title        = {Real-world Vehicle State Estimation Dataset ({ReV-StED})},
+  howpublished = {Zenodo, dataset, version 1},
+  year         = {2025},
+  doi          = {10.5281/zenodo.15270060},
+}
+```
 
 ---
 

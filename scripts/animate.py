@@ -5,10 +5,10 @@
     uv run python scripts/animate.py --no-map --start 38.26 --out runs/frame.png   # one still, no map
 
 The camera is locked to the car's centre of gravity (CoG), nose to the right; a faded
-OpenStreetMap and a world-fixed 2 m dot grid move underneath. Two velocity vectors start at the
+OpenStreetMap and a world-fixed 2 m line grid move underneath. Two velocity vectors start at the
 CoG, the reference beta (Correvit, black) and the estimator's (orange), each with a wedge against
-the body axis. The scene draws the angles x3; the text line and the 10 s strip below show the true
-values. The front tyres turn by the true road-wheel angle. A north-up inset shows the track
+the body axis. All angles are drawn to scale: beta as measured and estimated, the front tyres at
+the true road-wheel angle. The text line and the 10 s strip below show the values. A north-up inset shows the track
 of the window. --window, --start and --duration select the frames: 50 Hz data, 4 samples per frame
 at 12.5 fps, i.e. real time. --preds takes any prediction folder in the bundle format (one
 <recording>.h5 per test recording, one 1-D dataset: beta in deg for every sample).
@@ -44,16 +44,16 @@ from sideslip_bench.report import C_MUT, FS, WIN_B_S, pick_window  # noqa: E402 
 
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.animation import PillowWriter  # noqa: E402
+from matplotlib.collections import LineCollection  # noqa: E402
 from matplotlib.colors import to_rgba  # noqa: E402
 from matplotlib.patches import Arc, Circle, FancyArrowPatch, FancyBboxPatch, Polygon, Wedge  # noqa: E402
 from matplotlib.ticker import MaxNLocator  # noqa: E402
 from matplotlib.transforms import Affine2D, blended_transform_factory  # noqa: E402
 
-GAIN = 3.0                             # the scene draws beta x3; text and strip show the true values
 FPS, DPI_GIF, DPI_PNG = 12.5, 100, 200
 FIG_W, FIG_H, STRIP_H = 9.6, 6.4, 2.0  # in; the scene fills the figure above the strip
 VIEW_X = (-3.0, 8.7)                   # scene x range in the car frame in m (x forward, y left, origin CoG)
-VEC_LEN, GRID_M = 4.7, 2.0             # velocity-vector length, world-fixed dot grid, in m
+VEC_LEN, GRID_M = 4.7, 2.0             # velocity-vector length, world-fixed grid spacing, in m
 STRIP_S = 10.0                         # history shown in the strip, s
 INS_TO_COG_M = 0.92                    # ReV-StED: the INS point sits this far behind the CoG (fit of check_conventions)
 MAP_ZOOM, MAP_MARGIN_M = 19, 30.0
@@ -326,13 +326,11 @@ class Scene:
             fig.text(fx(W - 0.11), fy(0.09), "© OpenStreetMap contributors", fontsize=8.5, color=C_MUTED,
                      ha="right", va="bottom", zorder=10,
                      bbox=dict(boxstyle="round,pad=0.25,rounding_size=0.3", fc=(1, 1, 1, 0.75), ec="none"))
-        fig.text(fx(W - 0.11), fy(0.42), f"angles drawn ×{GAIN:g}", fontsize=10.5, color=C_TEXT,
-                 ha="right", va="bottom", zorder=10)
 
         gx = np.arange(np.floor(D["x"].min() / GRID_M) - 4, np.ceil(D["x"].max() / GRID_M) + 5) * GRID_M
         gy = np.arange(np.floor(D["y"].min() / GRID_M) - 4, np.ceil(D["y"].max() / GRID_M) + 5) * GRID_M
-        self.grid_w = np.array(np.meshgrid(gx, gy)).reshape(2, -1).T
-        self.grid = ax.scatter([], [], s=5, c=[(0.2, 0.22, 0.25, 0.30)], lw=0, zorder=1.8)
+        segs = [[(u, gy[0]), (u, gy[-1])] for u in gx] + [[(gx[0], u), (gx[-1], u)] for u in gy]
+        self.grid = ax.add_collection(LineCollection(segs, colors=[(0.2, 0.22, 0.25, 0.22)], lw=0.7, zorder=1.8))
 
         # body axis (beta = 0) and the two wedges, below the car so that they emerge at the nose
         ax.plot([0, VEC_LEN * 1.08], [0, 0], color=C_MUTED, lw=0.9, ls=(0, (4, 3)), zorder=3)
@@ -369,7 +367,7 @@ class Scene:
         # track inset, north up, top right
         x, y, mg = D["x"], D["y"], 8.0
         lim = (x.min() - mg, x.max() + mg, y.min() - mg, y.max() + mg)
-        iw = min(1.8, 1.6 * (lim[1] - lim[0]) / (lim[3] - lim[2]))     # at most 1.8 in wide, 1.6 in tall
+        iw = min(1.98, 1.76 * (lim[1] - lim[0]) / (lim[3] - lim[2]))   # at most 1.98 in wide, 1.76 in tall
         ih, pad = iw * (lim[3] - lim[2]) / (lim[1] - lim[0]), 0.108
         x0, y0 = W - 0.216 - iw, H - 0.2025 - ih
         fig.patches.append(FancyBboxPatch((fx(x0 - pad), fy(y0 - pad)), (iw + 2 * pad) / FIG_W, (ih + 2 * pad) / FIG_H,
@@ -426,9 +424,7 @@ class Scene:
             self.map.set_extent((x0 + c0 / Ww * (x1 - x0), x0 + c1 / Ww * (x1 - x0),
                                  y1 - r1 / Hh * (y1 - y0), y1 - r0 / Hh * (y1 - y0)))
             self.map.set_transform(world)
-        c, s = np.cos(psi), np.sin(psi)
-        g = (self.grid_w - (x, y)) @ np.array([[c, -s], [s, c]])               # world -> car frame
-        self.grid.set_offsets(g[(g[:, 0] > V[0] - 1) & (g[:, 0] < V[1] + 1) & (np.abs(g[:, 1]) < V[3] + 1)])
+        self.grid.set_transform(world)
 
         delta = float(self.veh.road_wheel(D["steer"][i]))                     # true road-wheel angle, gain 1
         for p, xt, yt, front in self.tyres:
@@ -436,11 +432,11 @@ class Scene:
                 p.set_transform(Affine2D().rotate_around(xt, yt, delta) + self.ax.transData)
 
         br, be = D["ref"][i], D["est"][i]
-        for w, a in ((self.w_ref, GAIN * br), (self.w_est, GAIN * be)):
+        for w, a in ((self.w_ref, br), (self.w_est, be)):
             w.set_theta1(min(0, a))
             w.set_theta2(max(0, a))
-        self.a_ref.theta1, self.a_ref.theta2 = min(0, GAIN * br), max(0, GAIN * br)
-        for arrow, a in ((self.v_ref, np.deg2rad(GAIN * br)), (self.v_est, np.deg2rad(GAIN * be))):
+        self.a_ref.theta1, self.a_ref.theta2 = min(0, br), max(0, br)
+        for arrow, a in ((self.v_ref, np.deg2rad(br)), (self.v_est, np.deg2rad(be))):
             arrow.set_positions((0, 0), (VEC_LEN * np.cos(a), VEC_LEN * np.sin(a)))
         self.t_v.set_text(f"{D['v'][i] * 3.6:.0f} km/h")
         self.t_ref.set_text(f"β reference  {deg(br)}")
